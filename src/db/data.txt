@@ -1,0 +1,184 @@
+
+INSERT INTO "cuisineType"
+("cuisineType",photo)
+VALUES
+('Italian','https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg'),
+('Indian','https://sandinmysuitcase.com/wp-content/uploads/2021/01/Popular-Indian-Food-Dishes-735x551.jpg.webp'),
+('American','https://www.lacademie.com/wp-content/uploads/2022/01/popular-american-foods.jpg'),
+('Thai','https://images.squarespace-cdn.com/content/v1/5e18d3f50307a1644980fa7f/1630531161840-UYFCUW75ASLC98YPS34J/best+Thai+food+in+Elmhurst+Queens'),
+('Mexican','https://zukinrealtyinc.com/wp-content/uploads/2022/02/mexican-food-west-chester-zukin-realtyjpg-1024x648.jpg'),
+('European','https://woodstravel.co.uk/blog/wp-content/uploads/2015/12/400768.jpg'),
+('French','https://www.bestfranceforever.com/wp-content/uploads/2018/01/1170x658_ratatouille.jpg'),
+('Vegan','https://images.immediate.co.uk/production/volatile/sites/30/2018/06/Vegan-salad-bowl-499145d.jpg');
+
+
+WITH ins AS (
+INSERT INTO "Login"
+(email,password)
+VALUES
+('mark@gmail.com','welcome12#'),
+('tony@gmail.com','welcome12#'),
+('pranavi@gmail.com','welcome12#'),
+('lucy@gmail.com','welcome12#'),
+('kawtar@gmail.com','welcome12#'),
+('aurore@gmail.com','welcome12#'),
+
+RETURNING id)
+    INSERT INTO "userTable"
+    ("firstName","secondName","address","postCode","phone","login_id")
+    SELECT 
+    ( 'antony', 'mark',  'diamant laan,brusseles', '1000',  '32005000','1'),
+    ( 'tony', 'stark',  'diamant laan,brusseles','1000',  '3200000','2'),
+    ( 'pranavi', 'lakkjala',  'diamant laan,brusseles', '1000',  '306500','3'),
+    ( 'lucy', 'John',  'diamant laan,brusseles','1000',  '320000','4'),
+    ( 'kawtar', 'John',  'diamant laan,brusseles ','1000',  '3205000','5'),
+    ( 'aurore', 'vandam',  'diamant laan,brusseles',' 1000',  '3205000','6');
+    FROM ins;
+
+
+    ('prathima@gmail.com','welcome12#'),
+('dieogo@gmail.com','welcome12#')
+
+( 'prathima', 'sampath',  'diamant laan,brusseles 1000',  '32000065000',ins.id),
+    ( 'dieogo', 'heinene',  'diamant laan,brusseles 1000',  '32000065000',ins.id)
+
+
+    WITH ins AS (
+        INSERT INTO "Login" (email, password)
+        VALUES
+        ('ramsay@gmail.com', 'password123'),
+        ('ramdoss@gmail.com', 'password456'),
+        ('jimsmith@gmail.com', 'password789'),
+        ('jillsmith@gmail.com', 'welcome12#'),
+        ('jackjohnson@gmail.com', 'welcome12#'),
+        ('JohnSmith@gmail.com', 'welcome12#'),
+        ('JohnS@gmail.com', 'welcome12#'),
+        ('Johnh@gmail.com', 'welcome12#'),
+        ('JohnSm@gmail.com', 'welcome12#'),
+        ('Johny@gmail.com', 'welcome12#'),
+        ('ramds@gmail.com', 'password456'),
+        ('raoss@gmail.com', 'password456'),
+        ('raoss@gmail.com', 'password456'),
+        ('ross@gmail.com', 'password456'),
+        ('jillsth@gmail.com', 'welcome12#'),
+        ('jilsmith@gmail.com', 'welcome12#')
+        RETURNING id),
+        ins2 AS (
+            INSERT INTO "chefTable" 
+            ("aboutMe", "cuisineType", rating, "postCode", "chefPhoto")
+            VALUES
+            ('I am a professional chef with over 10 years of experience in the industry.','1','4.5','1000','https://www.seekpng.com/png/detail/118-1180558_gordon-ramsay-hells-kitchen-season-1-10-dvd.png'),
+            ('I have a passion for cooking and love to experiment with different ingredients and flavors.','2','4.5','1000','https://images.pexels.com/photos/8136890/pexels-photo-8136890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'), 
+            ('I specialize in creating unique and delicious dishes for special occasions and events.','3','4.5','1000','https://images.pexels.com/photos/7698235/pexels-photo-7698235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I have a talent for creating flavorful and healthy dishes that please both the taste buds and the waistline.','4','4.5','1000','https://images.pexels.com/photos/8879388/pexels-photo-8879388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I am an expert in creating gourmet meals using only the freshest and highest quality ingredients.','5','4.5','1000','https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I am a food enthusiast and love trying out new cuisines.','6','4.5','1000','https://images.pexels.com/photos/7447293/pexels-photo-7447293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I am a professional chef with over 10 years of experience in cooking.','7','4.5','1000','https://images.pexels.com/photos/3771812/pexels-photo-3771812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I love experimenting with different ingredients and creating unique dishes.','8','4.5','1000','https://images.pexels.com/photos/6248810/pexels-photo-6248810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I have a passion for baking and enjoy creating sweet treats.','1','4.5','1000','https://images.pexels.com/photos/11792243/pexels-photo-11792243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I have a background in fine dining and enjoy creating upscale dishes.','2','4.5','1000','https://www.filmibeat.com/img/2021/04/madhavan1-1618553848.jpg'),
+            ('I am a professional chef with over 10 years of experience in the industry.','3','4.5','1000','https://images.pexels.com/photos/6957845/pexels-photo-6957845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I have a passion for cooking and love to experiment with different ingredients and flavors','4','4.5','1000','https://images.pexels.com/photos/9399544/pexels-photo-9399544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'), 
+            ('I specialize in creating unique and delicious dishes for special occasions and events.','5','4.5','1000','https://eng.cinereporters.com/wp-content/uploads/2022/10/keerthi3-3.jpg'),
+            ('I have a talent for creating flavorful and healthy dishes that please both the taste buds and the waistline.','6','4.5','1000','https://images.pexels.com/photos/5593344/pexels-photo-5593344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I am an expert in creating gourmet meals using only the freshest and highest quality ingredients.','7','4.5','1000','https://images.pexels.com/photos/3873973/pexels-photo-3873973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+            ('I am a professional chef with over 10 years of experience in cooking.','8','4.5','1000','https://images.pexels.com/photos/8805796/pexels-photo-8805796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+            RETURNING id
+                    )
+        INSERT INTO "userTable" ("firstName","secondName","address","postCode","phone","login_id","chefTable_id")
+        VALUES
+        ('ramsay', 'Gordan','123 Main StAnytown ','1000','5551212', '7', '1'),
+         ('doss',  'Ram',  '456 Main StAnytown ','1020','1213','8','2'),
+          ( 'Jim',  'Smith',  '789 Main StAnytown ','1200','1214','9','3'),
+           ( 'Jill',  'Smith',  '246 Main StAnytown USA','1201','1215','10','4'), 
+           ( 'Jack',  'Johnson',  '369 Main St Anytown ','1200','1216','11','5'), 
+           ( 'John',  'Smith',  '123 Main St',  '1001',  '5555' ,'12','6' ), 
+        ( 'Jane', 'Johnson',  '456 Main St',  '1100',  '5556' ,'13','7' ),
+        ( 'Bob',  'Williams',  '789 Main St',  '1200',  '5557' ,'14','8' ),
+   ( 'Emma',  'Brown',  '321 Main St',  '1001',  '5558','15', '9' ), 
+   ( 'Madhavan',  'Maddy',  '654 Main St',  '1100',  '5559' ,'16','10' ), 
+   ( 'Sophie',  'Miller',  '987 Main St',  '1000',  '5560'  ,'17','11'), 
+   ( 'Jane','tiffany',  '123 Main StAnytown ',  '1000',  '1212' ,'18','12' ), 
+  ( 'lakshmi', 'kala',  '456 Main StAnytown ',  '1020','1213' ,'19','13' ), 
+ ( 'Tom','Smith', '789 Main StAnytown ',  '1200',  '1214', '20','14'   ),   
+( 'Jack','Smith', '246 Main StUSA',  '1201',  '1215','21','15'  ),  
+( 'Emma','Brown','321 Main St','1001','5558','22','16')
+ ( 'David','Raman','654 Main St','1100','5559','23','15')
+ ( 'Daverd','Ramyan','654 Main St','1100','5559','24','16')
+
+          FROM ins,ins2;
+            
+
+
+FROM ins,ins2;
+      {      "tony@gmail.com",
+                   "password1",
+                   "I am a food enthusiast and love trying out new cuisines.",
+                   "6",
+                  postCode: "1001",
+                  chefPhoto: "https://images.pexels.com/photos/7447293/pexels-photo-7447293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Smith",
+                  firstName: "Tony",
+                  address: "123 Main St",
+                  phone: "5555"
+                },
+                {
+                  "Jane@gmail.com",
+                   "password2",
+                   "",
+                   "7",
+                  postCode: "1100",
+                  chefPhoto: "https://images.pexels.com/photos/8902109/pexels-photo-8902109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Johnson",
+                  firstName: "Jane",
+                  address: "456 Main St",
+                  phone: "555-555-5556"
+                },
+                {
+                  "Bob@gmail.com",
+                   "password3",
+                   "I love experimenting with different ingredients and creating unique dishes.",
+                   "8",
+                  postCode: "1200",
+                  chefPhoto: "https://images.pexels.com/photos/6019592/pexels-photo-6019592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Williams",
+                  firstName: "Bob",
+                  address: "789 Main St",
+                  phone: "555-555-5557"
+                },
+                {
+                  "Emma@gmail.com",
+                   "password4",
+                   "I have a passion for baking and enjoy creating sweet treats.",
+                   "1",
+                  postCode: "1001",
+                  chefPhoto: "https://images.pexels.com/photos/7965977/pexels-photo-7965977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Brown",
+                  firstName: "Emma",
+                  address: "321 Main St",
+                  phone: "555-555-5558"
+                },
+                {
+                  "David@gmail.com",
+                   "password5",
+                   "I love cooking traditional dishes and sharing them with others.",
+                   "2",
+                  postCode: "1100",
+                  chefPhoto: "https://images.pexels.com/photos/7129381/pexels-photo-7129381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Raman",
+                  firstName: "David",
+                  address: "654 Main St",
+                  phone: "555-555-5559"
+                },
+                {
+                  "Sophie@gmail.com",
+                   "password6",
+                   "I have a background in fine dining and enjoy creating upscale dishes.",
+                   "3",
+                  postCode: "1000",
+                  chefPhoto: "https://images.pexels.com/photos/4057693/pexels-photo-4057693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                  secondName: "Miller",
+                  firstName: "Sophie",
+                  address: "987 Main St",
+                  phone: "555-555-5560"
+                },
